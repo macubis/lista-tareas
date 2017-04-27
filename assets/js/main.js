@@ -64,4 +64,11 @@ var listaTareas =[
 	var mostrar = listaTareas.forEach(function(elemento){
     lista.innerHTML += "<li>"+ elemento.title + "</li>";
 });
-mostrar();
+mostrar
+
+function crearTarea(){
+	var nuevaTarea = document.getElementById("tarea").value;
+
+	document.getElementById("lista_tareas").innerHTML += "<li>"+ nuevaTarea +"</li>";
+};
+crearTarea();
